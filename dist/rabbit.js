@@ -13,7 +13,7 @@ const dateNow = Date.now();
 let content;
 let referrer = "";
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 app.use(bodyParser.json());
 function isDetached(buffer) {
     if (buffer.byteLength === 0) {
