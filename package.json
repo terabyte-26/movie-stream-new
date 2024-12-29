@@ -1,0 +1,25 @@
+{
+  "name": "rabbit_wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/rabbit.js",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^20.12.7",
+    "@types/node-fetch": "^2.6.11",
+    "body-parser": "^1.20.3",
+    "crypto-js": "^4.2.0",
+    "express": "^4.21.2",
+    "image-pixels": "^2.2.2",
+    "typescript": "^5.4.5"
+  }
+}
